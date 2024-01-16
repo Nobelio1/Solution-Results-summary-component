@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /*PRIMARIOS*/
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-red-b: hsla(0, 100%, 67%, 0.1);
+  --orangey-yellow-b: hsl(39, 100%, 56%, 0.1);
+  --green-teal-b: hsl(166, 100%, 37%, 0.1);
+  --cobalt-blue-b: hsl(234, 85%, 45%, 0.1);
+
+  /*GRADIENTES*/
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0.027);
+
+  /*NEUTRAL*/
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsla(222, 100%, 96%, 0.692);
+  --pale-blue2: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --light-lavender2: hsla(241, 100%, 89%, 0.5);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+}
+
+.card {
+  display: flex;
+  min-height: 50vh;
+  width: 615px;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: var(--white);
+  box-shadow: 5px 5px 100px 0.5px var(--light-lavender2);
+}
+
+.result {
+  padding: 1.5rem 2rem;
+  background-image: linear-gradient(
+    var(--light-slate-blue),
+    var(--light-royal-blue)
+  );
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.result__title {
+  color: var(--pale-blue);
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.result__puntaje {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 2rem;
+  border-radius: 50%;
+  background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.puntaje {
+  font-size: 4em;
+}
+
+.puntaje__secundario {
+  color: var(--pale-blue);
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.result__subtitle {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.result__paragraph {
+  color: var(--pale-blue);
+  padding: 0 1rem 1rem;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  gap: 0.5rem;
+}
+
+.summary__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark-gray-blue);
+}
+
+.summary__skills {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.summary__skill {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.summary__skill--reaction {
+  background-color: var(--light-red-b);
+}
+.summary__skill--memory {
+  background-color: var(--orangey-yellow-b);
+}
+.summary__skill--verbal {
+  background-color: var(--green-teal-b);
+}
+.summary__skill--visual {
+  background-color: var(--cobalt-blue-b);
+}
+
+.skill__type {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skill__reaction {
+  color: var(--light-red);
+  font-weight: 700;
+}
+.skill__memory {
+  color: var(--orangey-yellow);
+  font-weight: 700;
+}
+.skill__verbla {
+  color: var(--green-teal);
+  font-weight: 700;
+}
+.skill__visual {
+  color: var(--cobalt-blue);
+  font-weight: 700;
+}
+
+.skill__score {
+  color: grey;
+}
+
+b {
+  color: var(--dark-gray-blue);
+  font-weight: 800;
+}
+
+.summary__cta {
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+}
+
+@media (max-width: 375px) {
+  body {
+    align-items: flex-start;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+  .result {
+    border-radius: 0 0 30px 30px;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}

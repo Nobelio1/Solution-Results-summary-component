@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Results summary component</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <section class="result container">
+        <h1 class="result__title">Your Result</h1>
+        <div class="result__puntaje">
+          <h1 class="puntaje">76</h1>
+          <p class="puntaje__secundario">of 100</p>
+        </div>
+        <h2 class="result__subtitle">Great</h2>
+        <p class="result__paragraph">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary container">
+        <h3 class="summary__title">Summary</h3>
+        <div class="summary__skills">
+          <div class="summary__skill summary__skill--reaction">
+            <div class="skill__type">
+              <img
+                src="assets/images/icon-reaction.svg"
+                alt="icon-reaction"
+                class="skill__icon"
+              />
+              <p class="skill__reaction">Reaction</p>
+            </div>
+            <p class="skill__score"><b>80</b> / 100</p>
+          </div>
+          <div class="summary__skill summary__skill--memory">
+            <div class="skill__type">
+              <img
+                src="assets/images/icon-memory.svg"
+                alt="icon-memory"
+                class="skill__icon"
+              />
+              <p class="skill__memory">Memory</p>
+            </div>
+            <p class="skill__score"><b>92</b> / 100</p>
+          </div>
+          <div class="summary__skill summary__skill--verbal">
+            <div class="skill__type">
+              <img
+                src="assets/images/icon-verbal.svg"
+                alt="icon-verbal"
+                class="skill__icon"
+              />
+              <p class="skill__verbla">Verbal</p>
+            </div>
+            <p class="skill__score"><b>61</b> / 100</p>
+          </div>
+          <div class="summary__skill summary__skill--visual">
+            <div class="skill__type">
+              <img
+                src="assets/images/icon-visual.svg"
+                alt="icon-visual"
+                class="skill__icon"
+              />
+              <p class="skill__visual">Visual</p>
+            </div>
+            <p class="skill__score"><b>72</b> / 100</p>
+          </div>
+        </div>
+        <button class="summary__cta">Continue</button>
+      </section>
+    </main>
+  </body>
+</html>
